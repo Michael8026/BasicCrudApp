@@ -55,7 +55,7 @@ namespace BasicCrudApp.API.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public async Task<ActionResult> UpdateCountry(long id, [FromBody] UserDto user)
+        public async Task<ActionResult> UpdateUser(long id, [FromBody] UserDto user)
         {
             var result = new Result<bool>();
             result.RequestTime = DateTime.UtcNow;
@@ -68,7 +68,7 @@ namespace BasicCrudApp.API.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<ActionResult> RemoveCountry(long id)
+        public async Task<ActionResult> RemoveUser(long id)
         {
             var result = new Result<bool>();
             result.RequestTime = DateTime.UtcNow;
